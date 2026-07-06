@@ -3,87 +3,97 @@
   box-sizing: border-box;
 }
 
-body{
-    background-color: rgba(6, 23, 30, 1);
+body {
+  background-color: rgba(6, 23, 30, 1);
 }
 
-header{
-    height: 81px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+header {
+  height: 81px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(9, 33, 42, 1);
 }
 
-.headline_logo{
-    height: 41px;
-    width: 215px;
-    padding-left: 140px;
+.headline_logo {
+  height: 41px;
+  /* padding-left: 140px; */
 }
 
-main{
-    width: 1170px;
-    padding-top: 160px;
-    padding-bottom: 160px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+main {
+  width: 1170px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  padding-left: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
 }
 
-h1{
-    color: white;
-    font-family: 'Figtree';
-    font-weight: 800;
-    font-size: 56px;
-    text-align: center;
+h1 {
+  color: white;
+  font-family: "Figtree";
+  font-weight: 800;
+  font-size: 56px;
+  text-align: center;
 }
 
-.album_section{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-
+.album_section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 1170px;
 }
 
-.gallery_row_one{
-    display: flex;
-    gap: 16px;
+.gallery_row_one {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
-.gallery_row_two{
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+.gallery_row_two {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 
-
-.gallery_image{
-    height: 150px;
-    width: 150px;
-    border: 2px solid rgba(18, 70, 88, 1);
-    border-radius: 16px;
+.gallery_image {
+  height: 150px;
+  width: 150px;
+  border: 2px solid rgba(18, 70, 88, 1);
+  border-radius: 16px;
 }
 
-
-footer{
-    background-color: rgba(9, 33, 42, 1);
-    height: 128px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+footer {
+  background-color: rgba(9, 33, 42, 1);
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer img{
-    width: 225px;
-    height: 65px;
+footer img {
+  width: 225px;
+  height: 65px;
 }
-
- 
-
 
 @media screen and (min-width: 1440px) {
-  body {
+  header {
     padding: 0px max(calc(50% - 720px), 120px);
   }
 
+  footer {
+    padding: 0px max(calc(50% - 720px), 120px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 0px max(calc(50% - 720px), 120px);
+  }
+
+  footer {
+    padding: 0px max(calc(50% - 720px), 120px);
+  }
 }
