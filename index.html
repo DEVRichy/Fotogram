@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styleMainPage.css">
     <link rel="stylesheet" href="styles/styleOverlay.css">
+
+    
 </head>
 <body>
     <header>
@@ -18,20 +20,20 @@
         <h1>Your personal photo album</h1>
         <section class="album_section">
             <div class="gallery_row_one">
-                <img class="gallery_image" src="assets/img/alaska-810433_1280.jpg" alt="Bild von Alaska">
-                <img class="gallery_image" src="assets/img/anime-8788959_1280.jpg" alt="Bild in Anime Stiel einer Straße">
-                <img class="gallery_image" src="assets/img/atmosphere-8752835_1280.png" alt="Bild der Atmosphere">
-                <img class="gallery_image" src="assets/img/blue-tit-8521052_1280.jpg" alt="Bild eines Blaufinks">
-                <img class="gallery_image" src="assets/img/hurricane-92968_1280.jpg" alt="Bild eines Hurricane von oben">
-                <img class="gallery_image" src="assets/img/lake-2896379_1280.jpg" alt="Bild von einem See mit Bergen im Hintergrung">
-                <img class="gallery_image" src="assets/img/moorente-8783210_1280.jpg" alt="Bild einer Moorente beim abheben am Wasser">
+                <img onclick="openDialog(0)" class="gallery_image" src="assets/img/alaska-810433_1280.jpg" alt="Bild von Alaska">
+                <img onclick="openDialog(1)" class="gallery_image" src="assets/img/anime-8788959_1280.jpg" alt="Bild in Anime Stiel einer Straße">
+                <img onclick="openDialog(2)" class="gallery_image" src="assets/img/atmosphere-8752835_1280.png" alt="Bild der Atmosphere">
+                <img onclick="openDialog(3)" class="gallery_image" src="assets/img/blue-tit-8521052_1280.jpg" alt="Bild eines Blaufinks">
+                <img onclick="openDialog(4)" class="gallery_image" src="assets/img/hurricane-92968_1280.jpg" alt="Bild eines Hurricane von oben">
+                <img onclick="openDialog(5)" class="gallery_image" src="assets/img/lake-2896379_1280.jpg" alt="Bild von einem See mit Bergen im Hintergrung">
+                <img onclick="openDialog(6)" class="gallery_image" src="assets/img/moorente-8783210_1280.jpg" alt="Bild einer Moorente beim abheben am Wasser">
             </div>
             <div class="gallery_row_two">
-                <img class="gallery_image" src="assets/img/sea-2563389_1280.jpg" alt="Bild eines Sees bei Nacht mit einer Person mit Taschenlampe im Vordergrunda">
-                <img class="gallery_image" src="assets/img/snow-bunting-6781122_1280.jpg" alt="Bild einer Schneeammer auf einen Stein">
-                <img class="gallery_image" src="assets/img/snow-leopard-cubs-8039138_1280.jpg" alt="Bild eines jungen Schneeleoparden">
-                <img class="gallery_image" src="assets/img/travel-8785493_1280.jpg" alt="Bild einer Gebirgsgette">
-                <img class="gallery_image" src="assets/img/winter-1675197_1280.jpg" alt="Bild eines verschneiten Baumes">
+                <img onclick="openDialog(7)" class="gallery_image" src="assets/img/sea-2563389_1280.jpg" alt="Bild eines Sees bei Nacht mit einer Person mit Taschenlampe im Vordergrunda">
+                <img onclick="openDialog(8)" class="gallery_image" src="assets/img/snow-bunting-6781122_1280.jpg" alt="Bild einer Schneeammer auf einen Stein">
+                <img onclick="openDialog(9)" class="gallery_image" src="assets/img/snow-leopard-cubs-8039138_1280.jpg" alt="Bild eines jungen Schneeleoparden">
+                <img onclick="openDialog(10)" class="gallery_image" src="assets/img/travel-8785493_1280.jpg" alt="Bild einer Gebirgsgette">
+                <img onclick="openDialog(11)" class="gallery_image" src="assets/img/winter-1675197_1280.jpg" alt="Bild eines verschneiten Baumes">
             </div>
         </section>
     </main>
@@ -41,17 +43,18 @@
 
     <dialog id="photoDialog">
        <header>
-             <h2 id="imageTitle"></h2>
+             <h2 id="imageTitle">1235</h2>
         </header>
         <main>
             <img id="selectImage" src="" alt="">
         </main>
         <footer>
-            <button class="nextImg" onclick="nextImage()"></button>
-            <button class="nextImg" onclick="previousImage()"></button>
+            <button class="nextImg" onclick="nextImage()">Next</button>
+            <button class="nextImg" onclick="previousImage()">Pev</button>
         </footer>
        
     </dialog>
     
 </body>
+    <script src="script.js"></script>
 </html>
