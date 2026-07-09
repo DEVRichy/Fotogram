@@ -39,6 +39,10 @@ h1 {
   text-align: center;
 }
 
+h2{
+  color: white;
+}
+
 .album_section {
   display: flex;
   flex-direction: column;

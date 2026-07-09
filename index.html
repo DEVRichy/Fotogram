@@ -41,15 +41,19 @@
         <img class="footer_logo" src="assets/icons/DeveloperAkademieLogo.png" alt="Logo von der Developer Akademie">
     </footer>
 
+
+
     <dialog id="photoDialog">
        <header>
-             <h2 id="imageTitle">1235</h2>
+             <h2 id="imageTitle"></h2>
+             <button onclick="closeDialog()">X</button>
         </header>
         <main>
             <img id="selectImage" src="" alt="">
         </main>
         <footer>
             <button class="nextImg" onclick="previousImage()">Pev</button>
+            <p id="pageCount"></p>
             <button class="nextImg" onclick="nextImage()">Next</button>
         </footer>
        
