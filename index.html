@@ -44,17 +44,23 @@
 
 
     <dialog id="photoDialog">
-       <header>
-             <h2 id="imageTitle"></h2>
-             <button onclick="closeDialog()">X</button>
+       <header class="dialogHeader">
+             <h2 class="dialogH2" id="imageTitle"></h2>
+             <button onclick="closeDialog()" class="dialogCloseButton">
+                <img src="./assets/icons/close.svg" alt="Close Button">
+             </button>
         </header>
-        <main>
-            <img id="selectImage" src="" alt="">
+        <main class="dialogMain">
+            <img class="selectImage" id="selectImage" src="" alt="">
         </main>
-        <footer>
-            <button class="nextImg" onclick="previousImage()">Pev</button>
+        <footer class="dialogFooter">
+            <button class="prevImg navBtn" onclick="previousImage()">
+                <img src="./assets/icons/Union.svg" alt="Button for previous Image">
+            </button>
             <p id="pageCount"></p>
-            <button class="nextImg" onclick="nextImage()">Next</button>
+            <button class="nextImg navBtn" onclick="nextImage()">
+                <img src="./assets/icons/Union.svg" alt="Button for next Image">
+            </button>
         </footer>
        
     </dialog>

@@ -1,0 +1,96 @@
+dialog {
+  border-radius: 40px;
+  border: none;
+  background-color: rgba(9, 33, 42, 1);
+
+  width: 688px;
+  height: 674px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 56px 64px;
+
+  overflow: hidden;
+
+}
+
+dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.dialogHeader {
+  width: 560px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialogH2 {
+  font-family: "Figtree";
+  font-weight: 700;
+  color: white;
+}
+
+.dialogCloseButton{
+  background-color: rgba(9, 33, 42, 1);
+  border: none;
+  height: 32px;
+  width: 32px;
+  
+
+}
+.dialogCloseButton:hover{
+  background-color: rgba(18, 70, 88, 1);
+  border-radius: 50%;
+
+}
+
+.dialogMain {
+  width: 560px;
+  padding: 0px;
+}
+
+.selectImage {
+  width: 560px;
+  height: 375px;
+  padding: 0px;
+}
+
+.dialogFooter{
+  padding: 0px;
+  width: 261px;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+}
+
+.navBtn{
+  background-color: rgba(33, 39, 46, 1);
+  border-radius: 50%;
+  border: none;
+  height: 60px;
+  width: 60px;
+}
+
+.navBtn:hover{
+  background-color: rgba(55, 37, 40, 1);
+}
+
+.navBtn > img{
+  height: 24px;
+  width: 24px;
+}
+
+.prevImg{
+  transform: rotate(180deg);
+}

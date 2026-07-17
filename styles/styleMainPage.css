@@ -69,6 +69,10 @@ h2{
   border-radius: 16px;
 }
 
+.gallery_image:hover {
+  border: 2px solid rgba(107, 193, 225, 1);
+}
+
 footer {
   background-color: rgba(9, 33, 42, 1);
   height: 128px;
