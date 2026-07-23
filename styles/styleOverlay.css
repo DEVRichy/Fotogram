@@ -21,7 +21,7 @@ dialog[open] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  /* gap: 48px; */
 }
 
 .dialogHeader {
@@ -48,7 +48,6 @@ dialog[open] {
 .dialogCloseButton:hover{
   background-color: rgba(18, 70, 88, 1);
   border-radius: 50%;
-
 }
 
 .dialogMain {
@@ -63,16 +62,26 @@ dialog[open] {
 }
 
 .dialogFooter{
+  width: 688px;
+  display: flex;
+  justify-content: center;
+}
+
+.dialogFooterNav{
   padding: 0px;
   width: 261px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   font-family: 'Figtree';
   font-style: normal;
   font-weight: 500;
+  font-size: 16px;
   color: white;
 }
+
+
 
 .navBtn{
   background-color: rgba(33, 39, 46, 1);

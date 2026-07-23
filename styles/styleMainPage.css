@@ -9,7 +9,7 @@ body {
 
 header {
   height: 81px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   background-color: rgba(9, 33, 42, 1);
@@ -17,17 +17,23 @@ header {
 
 .headline_logo {
   height: 41px;
-  /* padding-left: 140px; */
+  position: relative;
+  left: calc((100vw - 1440px) / 2 + 135px);
 }
 
 main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.main_content {
   width: 1170px;
-  padding-top: 160px;
-  padding-bottom: 160px;
-  padding-left: 135px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 80px;
 }
 
@@ -39,27 +45,21 @@ h1 {
   text-align: center;
 }
 
-h2{
+h2 {
   color: white;
 }
 
 .album_section {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  width: 1170px;
-}
-
-.gallery_row_one {
-  display: flex;
-  justify-content: center;
   gap: 16px;
 }
 
-.gallery_row_two {
+.gallery {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 16px;
 }
 
 .gallery_image {
@@ -74,8 +74,12 @@ h2{
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-color: rgba(9, 33, 42, 1);
   height: 128px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,24 +88,4 @@ footer {
 footer img {
   width: 225px;
   height: 65px;
-}
-
-@media screen and (min-width: 1440px) {
-  header {
-    padding: 0px max(calc(50% - 720px), 120px);
-  }
-
-  footer {
-    padding: 0px max(calc(50% - 720px), 120px);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  header {
-    padding: 0px max(calc(50% - 720px), 120px);
-  }
-
-  footer {
-    padding: 0px max(calc(50% - 720px), 120px);
-  }
 }
